@@ -5,9 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        black: {
+        bgBlue: {
           10: "#141927",
         },
+        yellow: {
+          10: "#FF8B00",
+        }
       },
       screens: {
         xs: '400px',
