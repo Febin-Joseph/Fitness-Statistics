@@ -4,22 +4,22 @@ import DashboardCard from '../components/common/DashboardCard';
 
 const Fitness = () => {
   return (
-    <div className="bg-bgBlue-10 min-h-screen max-container padding-container">
-      <div className=''>
+    <div className="bg-bgBlue-10 min-h-screen">
+      <div className='max-container padding-container'>
         <h1 className='text-white font-bold text-[30px]'>Dashboard</h1>
         <h6 className='text-white text-[15px] pt-1'>Good Morning. Analytic your
           <span className='text-yellow-10'> Game!</span>
         </h6>
       </div>
 
-      <div className='flexEnd justify-end items-center -mt-10'>
+      <div className='flexEnd justify-end items-center -mt-10 max-container padding-container'>
         <img
           src={search}
           alt="search"
           className='size-[30px]' />
       </div>
 
-      <div className='mt-10 flex justify-between items-center w-full'>
+      <div className='mt-10 flex justify-between items-center w-full max-container padding-container'>
         <h1 className='text-white font-medium text-[22px]'>Overview</h1>
         <div className='flex gap-8 text-white items-center text-[15px]'>
           <p className='underline text-[#F52C56]'>Week</p>
@@ -28,7 +28,7 @@ const Fitness = () => {
         </div>
       </div>
 
-      <div className='flex gap-5 overflow-scroll no-scrollbar mt-5'>
+      <div className='flex gap-5 overflow-scroll no-scrollbar mt-5 pl-3 pr-3'>
         <DashboardCard
           color="text-[#FF8B00]"
           text1="86"
@@ -45,7 +45,7 @@ const Fitness = () => {
           text2="Highest Point" />
       </div>
 
-      <div className='mt-10'>
+      <div className='mt-10 max-container padding-container mb-10'>
         <h1 className='text-white font-medium text-[22px]'>Daily Activity</h1>
         <div className='mt-4'>
           <p className='text-white'>Steps</p>
@@ -53,22 +53,25 @@ const Fitness = () => {
         </div>
 
         <div className='mt-5 flex gap-24'>
-          <p className='text-white text-[18px]'>Distance</p>
-          <p className='text-white text-[18px]'>Calories</p>
-          <p className='text-white text-[18px]'>Time</p>
+          <div className='flex flex-col'>
+            <p className='text-white text-[18px]'>Distance</p>
+            <p className='text-white font-bold text-[21px]'>9.4 Km</p>
+          </div>
+          <div className='flex flex-col'>
+            <p className='text-white text-[18px]'>Calories</p>
+            <p className='text-white font-bold text-[21px]'>450 Kcal</p>
+          </div>
+          <div className='flex flex-col'>
+            <p className='text-white text-[18px]'>Time</p>
+            <p className='text-white font-bold text-[21px]'>1:02 Hrs</p>
+          </div>
         </div>
-
-        <div className='flex gap-[102px] mt-1 mb-10 text-[20px] font-medium'>
-          <p className='text-white'>9.4 Km</p>
-          <p className='text-white'>450 Kcal</p>
-          <p className='text-white'>1:02 Hrs</p>
-        </div>
-
-        <img 
-        src={statistics1} 
-        alt="statistics" 
-        className='' />
       </div>
+
+      <img
+        src={statistics1}
+        alt="statistics"
+        className='' />
 
     </div>
   )
