@@ -1,6 +1,7 @@
 import React from 'react';
 import { search, statistics1 } from '../constant'
 import DashboardCard from '../components/common/DashboardCard';
+import Menu from '../components/common/Menu';
 
 const Fitness = () => {
   return (
@@ -72,6 +73,10 @@ const Fitness = () => {
         src={statistics1}
         alt="statistics"
         className='' />
+
+        <div>
+          <Menu />
+        </div>
 
     </div>
   )
