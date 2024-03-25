@@ -1,6 +1,7 @@
 import React from 'react'
 import { statistics3 } from '../constant'
 import AnalyticsCard from '../components/card/AnalyticsCard'
+import Menu from '../components/common/Menu'
 
 const Analytics = () => {
   return (
@@ -35,7 +36,7 @@ const Analytics = () => {
           alt="statistics3"
         />
 
-        <div className='flex flex-row text-white text-[13px] gap-14 justify-center mb-16 mt-2'>
+        <div className='flex flex-row text-white text-[13px] gap-14 justify-center mb-10 mt-2'>
           <p>JUL</p>
           <p>AUG</p>
           <p>SEP</p>
@@ -44,7 +45,7 @@ const Analytics = () => {
           <p>DEC</p>
         </div>
 
-        <div className='mt-5 flex gap-24 justify-center'>
+        <div className='mt-2 flex gap-24 justify-center'>
           <div className='flex flex-col justify-center align-middle items-center'>
             <p className='text-white text-[18px]'>Total Points</p>
             <p className='text-white font-medium text-[30px]'>2.354</p>
@@ -55,8 +56,12 @@ const Analytics = () => {
           </div>
         </div>
 
-        <div>
+        <div className='mt-8 mb-10'>
           <AnalyticsCard />
+        </div>
+
+        <div className='pb-2 flex justify-center'>
+          <Menu />
         </div>
       </div>
     </div>
