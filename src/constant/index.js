@@ -9,6 +9,8 @@ import line from '../assets/line.svg'
 import running from '../assets/running.svg'
 import swimming from '../assets/swimming.svg'
 import statistics2 from '../assets/statistics2.svg'
+import statistics3 from '../assets/statistics3.svg'
+import analyticsIcon from '../assets/AnalyticsIcon.svg'
 
 // PAGES
 import Fitness from '../pages/Fitness'
@@ -31,4 +33,6 @@ export {
     running,
     swimming,
     statistics2,
+    statistics3,
+    analyticsIcon,
 }

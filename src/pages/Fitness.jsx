@@ -58,17 +58,17 @@ const Fitness = () => {
         </div>
 
         <div className='mt-5 flex gap-24'>
-          <div className='flex flex-col'>
+          <div className='flex flex-col justify-center items-center'>
             <p className='text-white text-[18px]'>Distance</p>
-            <p className='text-white font-bold text-[21px]'>9.4 Km</p>
+            <p className='text-white font-medium text-[21px]'>9.4 Km</p>
           </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col justify-center items-center'>
             <p className='text-white text-[18px]'>Calories</p>
-            <p className='text-white font-bold text-[21px]'>450 Kcal</p>
+            <p className='text-white font-medium text-[21px]'>450 Kcal</p>
           </div>
-          <div className='flex flex-col'>
+          <div className='flex flex-col justify-center items-center'>
             <p className='text-white text-[18px]'>Time</p>
-            <p className='text-white font-bold text-[21px]'>1:02 Hrs</p>
+            <p className='text-white font-medium text-[21px]'>1:02 Hrs</p>
           </div>
         </div>
       </div>

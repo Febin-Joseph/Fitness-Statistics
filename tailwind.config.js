@@ -24,6 +24,7 @@ module.exports = {
         0: '0px',
         '1xl': '4px',
         '3xl': '22px',
+        '4xl': '40px'
       },
     },
   },
