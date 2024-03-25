@@ -1,6 +1,6 @@
 import React from 'react';
 import { search, statistics1 } from '../constant'
-import DashboardCard from '../components/common/DashboardCard';
+import DashboardCard from '../components/card/DashboardCard';
 import Menu from '../components/common/Menu';
 import { useNavigate } from 'react-router-dom';
 
@@ -21,7 +21,7 @@ const Fitness = () => {
           src={search}
           alt="search"
           className='size-[30px]' 
-          onClick={navigate(() => '/')}/>
+          onClick={() => navigate('/statistics')}/>
       </div>
 
       <div className='mt-10 flex justify-between items-center w-full max-container padding-container'>

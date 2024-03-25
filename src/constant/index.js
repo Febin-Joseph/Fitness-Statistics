@@ -4,6 +4,11 @@ import statistics1 from '../assets/statistics1.svg'
 import mainmenu from '../assets/mainmenu.svg'
 import profile from '../assets/profile.svg'
 import setting from '../assets/setting.svg'
+import curve from '../assets/curve.svg'
+import line from '../assets/line.svg'
+import running from '../assets/running.svg'
+import swimming from '../assets/swimming.svg'
+import statistics2 from '../assets/statistics2.svg'
 
 // PAGES
 import Fitness from '../pages/Fitness'
@@ -17,8 +22,13 @@ export {
     mainmenu,
     profile,
     setting,
+    curve,
+    line,
     Fitness,
     Statistics,
     Analytics,
     Profile,
+    running,
+    swimming,
+    statistics2,
 }
