@@ -2,8 +2,11 @@ import React from 'react';
 import { search, statistics1 } from '../constant'
 import DashboardCard from '../components/common/DashboardCard';
 import Menu from '../components/common/Menu';
+import { useNavigate } from 'react-router-dom';
 
 const Fitness = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-bgBlue-10 min-h-screen">
       <div className='max-container padding-container'>
@@ -17,7 +20,8 @@ const Fitness = () => {
         <img
           src={search}
           alt="search"
-          className='size-[30px]' />
+          className='size-[30px]' 
+          onClick={navigate(() => '/')}/>
       </div>
 
       <div className='mt-10 flex justify-between items-center w-full max-container padding-container'>
@@ -74,7 +78,7 @@ const Fitness = () => {
         alt="statistics"
         className='' />
 
-        <div>
+        <div className='pb-2 flex justify-center'>
           <Menu />
         </div>
 
