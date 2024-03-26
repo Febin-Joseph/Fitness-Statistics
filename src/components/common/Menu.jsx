@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { mainmenu, profile, setting } from '../../constant';
+import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
+  let navigate = useNavigate
 
   useEffect(() => {
     let links = document.getElementsByTagName("li");
@@ -27,7 +29,7 @@ const Menu = () => {
       <ul className='flex gap-24 z-10'>
         <li><img src={setting} alt="setting" className='size-8' /></li>
         <li><img src={mainmenu} alt="setting" className='size-8 opacity-0' /></li>
-        <li><img src={profile} alt="setting" className='size-8' /></li>
+        <li><img src={profile} alt="setting" className='size-8' onClick={() => navigate('/profile')}/></li>
       </ul>
       <div id='circle' className='absolute items-center justify-center flex bg-red-500
                                  w-[70px] h-[70px] rounded-[50%] border-[7px] border-bgBlue-10

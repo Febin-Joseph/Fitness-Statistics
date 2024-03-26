@@ -11,6 +11,8 @@ import swimming from '../assets/swimming.svg'
 import statistics2 from '../assets/statistics2.svg'
 import statistics3 from '../assets/statistics3.svg'
 import analyticsIcon from '../assets/AnalyticsIcon.svg'
+import heart from '../assets/heart.svg'
+import usa from '../assets/USA.svg'
 
 // PAGES
 import Fitness from '../pages/Fitness'
@@ -35,4 +37,6 @@ export {
     statistics2,
     statistics3,
     analyticsIcon,
+    heart,
+    usa,
 }

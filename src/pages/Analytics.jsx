@@ -1,5 +1,5 @@
 import React from 'react'
-import { statistics3 } from '../constant'
+import { search, statistics3 } from '../constant'
 import AnalyticsCard from '../components/card/AnalyticsCard'
 import Menu from '../components/common/Menu'
 
@@ -9,6 +9,14 @@ const Analytics = () => {
       <div className='max-container padding-container'>
         <h1 className='text-white  text-[15px] '>Reports</h1>
         <h6 className='text-white font-bold text-[30px]'>Analytics Reports</h6>
+      </div>
+
+      <div className='flexEnd justify-end items-center -mt-10 max-container padding-container'>
+        <img
+          src={search}
+          alt="search"
+          className='size-[30px]'
+        />
       </div>
 
       <div className='flex gap-14 text-white items-center text-[15px] justify-center mt-8 mb-10'>
