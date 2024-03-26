@@ -5,7 +5,7 @@ import Menu from '../components/common/Menu'
 
 const Analytics = () => {
   return (
-    <div className="bg-bgBlue-10 min-h-screen">
+    <div className="bg-bgBlue-10 min-h-screen pt-5">
       <div className='max-container padding-container'>
         <h1 className='text-white  text-[15px] '>Reports</h1>
         <h6 className='text-white font-bold text-[30px]'>Analytics Reports</h6>

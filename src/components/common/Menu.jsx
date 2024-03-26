@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 const Menu = () => {
   const navigate = useNavigate();
-  const [activeIcon, setActiveIcon] = useState(1); // Set the initial state to 1 for mainmenu
+  const [activeIcon, setActiveIcon] = useState(1);
 
   useEffect(() => {
     const links = document.getElementsByTagName("li");
@@ -13,7 +13,13 @@ const Menu = () => {
     for (let i = 0; i < links.length; i++) {
       links[i].onclick = function () {
         const iconOffset = i * 80;
-        circle.style.left = iconOffset + "px";
+        if (i === 0) { 
+          circle.style.left = (iconOffset + 50) + "px"; 
+        } else if (i === 0) {
+          circle.style.left = (iconOffset + 50) + "px"; 
+        } else {
+          circle.style.left = iconOffset + "px";
+        }
         setActiveIcon(i);
       };
     }

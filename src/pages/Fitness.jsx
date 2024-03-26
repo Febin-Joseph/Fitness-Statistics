@@ -8,7 +8,7 @@ const Fitness = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-bgBlue-10 min-h-screen">
+    <div className="bg-bgBlue-10 min-h-screen pt-5">
       <div className='max-container padding-container'>
         <h1 className='text-white font-bold text-[30px]'>Dashboard</h1>
         <h6 className='text-white text-[15px] pt-1'>Good Morning. Analytic your
@@ -20,8 +20,8 @@ const Fitness = () => {
         <img
           src={search}
           alt="search"
-          className='size-[30px]' 
-          onClick={() => navigate('/statistics')}/>
+          className='size-[30px]'
+          onClick={() => navigate('/statistics')} />
       </div>
 
       <div className='mt-10 flex justify-between items-center w-full max-container padding-container'>
@@ -37,17 +37,23 @@ const Fitness = () => {
         <DashboardCard
           color="text-[#FF8B00]"
           text1="86"
-          text2="Your Final Point" />
+          text2="Your Final Point"
+          classname='pt-5 text-[35px]'
+        />
 
         <DashboardCard
           color="text-[#6663FA]"
           text1="58"
-          text2="Average Point" />
+          text2="Average Point"
+          classname='pt-5 text-[35px]'
+        />
 
         <DashboardCard
           color="text-[#F52C56]"
           text1="140"
-          text2="Highest Point" />
+          text2="Highest Point"
+          classname='pt-5 text-[35px]'
+        />
       </div>
 
       <div className='mt-10 max-container padding-container mb-10'>
@@ -78,9 +84,9 @@ const Fitness = () => {
         alt="statistics"
         className='' />
 
-        <div className='pb-2 flex justify-center'>
-          <Menu />
-        </div>
+      <div className='pb-2 flex justify-center'>
+        <Menu />
+      </div>
 
     </div>
   )

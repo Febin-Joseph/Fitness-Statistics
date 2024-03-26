@@ -10,7 +10,7 @@ const Statistics = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-bgBlue-10 min-h-screen">
+    <div className="bg-bgBlue-10 min-h-screen pt-5">
       <div className='max-container padding-container'>
         <h1 className='text-white  text-[15px] '>Reports</h1>
         <h6 className='text-white font-bold text-[30px]'>Statistics</h6>
@@ -86,7 +86,7 @@ const Statistics = () => {
             text2={'Running'}
             color={'text-[#6663FA]'}
             icon={running}
-            classname={'text-[29px] pt-5 pb-4'}
+            classname={'text-[30px] pt-5 pb-4'}
           />
 
           <DashboardCard
@@ -94,7 +94,7 @@ const Statistics = () => {
             text2={'Swimming Pool'}
             color={'text-yellow-10'}
             icon={swimming}
-            classname={'text-[29px] pt-5 pb-4'}
+            classname={'text-[30px] pt-5 pb-4'}
           />
         </div>
       </div>
