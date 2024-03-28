@@ -3,12 +3,51 @@ import { search, statistics1 } from '../constant'
 import DashboardCard from '../components/card/DashboardCard';
 import Menu from '../components/common/Menu';
 import { useNavigate } from 'react-router-dom';
+import FitnessChart from '../components/chart/FitnessChart';
 
 const Fitness = () => {
   const navigate = useNavigate();
 
+  const pData1 = [2500, 1398, 9800, 3908, 4800, 3800, 7000, 4000, 5000, 6000, 100, 10000, 2000, 4000, 2000]
+  const xLabels1 = [
+    'Page A',
+    'Page B',
+    'Page C',
+    'Page D',
+    'Page E',
+    'Page F',
+    'Page G',
+    'Page H',
+    'Page I',
+    'Page J',
+    'Page K',
+    'Page L',
+    'Page M',
+    'Page N',
+    'Page O',
+  ];
+
+  const pData2 = [2500, 100, 3000, 2000, 4800, 3000, 4300, 4000, 5000, 2000, 3000, 1000, 2000, 4000, 2000]
+  const xLabels2 = [
+    'Page A',
+    'Page B',
+    'Page C',
+    'Page D',
+    'Page E',
+    'Page F',
+    'Page G',
+    'Page H',
+    'Page I',
+    'Page J',
+    'Page K',
+    'Page L',
+    'Page M',
+    'Page N',
+    'Page O',
+  ];
+
   return (
-    <div className="bg-bgBlue-10 min-h-screen pt-5">
+    <div className="bg-bgBlue-10 min-h-screen pt-5 overflow-hidden">
       <div className='max-container padding-container'>
         <h1 className='text-white font-bold text-[30px]'>Dashboard</h1>
         <h6 className='text-white text-[15px] pt-1'>Good Morning. Analytic your
@@ -79,10 +118,23 @@ const Fitness = () => {
         </div>
       </div>
 
-      <img
-        src={statistics1}
-        alt="statistics"
-        className='' />
+      <div className="relative overflow-hidden">
+        <div className="justify-start -ml-8">
+          <FitnessChart
+            pData={pData1}
+            xLabels={xLabels1}
+            color={'#F52C56'}
+          />
+        </div>
+
+        <div className="absolute -ml-8 justify-start top-0 left-0 w-full">
+          <FitnessChart
+            pData={pData2}
+            xLabels={xLabels2}
+            color={'#FF8B00'}
+          />
+        </div>
+      </div>
 
       <div className='pb-2 flex justify-center'>
         <Menu />

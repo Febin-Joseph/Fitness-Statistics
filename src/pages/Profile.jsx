@@ -5,7 +5,7 @@ import Menu from '../components/common/Menu'
 
 const Profile = () => {
   return (
-    <div className="bg-bgBlue-10 min-h-screen pt-5">
+    <div className="bg-bgBlue-10 min-h-screen pt-5 overflow-hidden">
       <div className='max-container padding-container'>
         <h1 className='text-white  text-[15px] '># 12 Running</h1>
         <h6 className='text-white font-bold text-[30px]'>Lurch Schpellchek</h6>
